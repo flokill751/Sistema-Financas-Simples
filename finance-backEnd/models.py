@@ -16,7 +16,7 @@ class Usuario(db.Model):
 
 
 class Gasto(db.Model):
-    __Gastos__="Gastos"
+    __tablename__="Gasto"
     
     id = db.Column(db.Integer, primary_key = True)
     descricao = db.Column(db.String(120), nullable=False)
